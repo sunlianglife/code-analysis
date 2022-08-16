@@ -21,7 +21,7 @@ Function.prototype.myApply = function  (context, args) {
     return result
 }
 
-Function.prototype.bind = function  (context, ...args) {
+Function.prototype.myCall = function  (context, ...args) {
     let _this = this
     let result = function () {
         _this.apply(this instanceof _this ? this : context, [...args, ...arguments])
