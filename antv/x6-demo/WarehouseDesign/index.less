@@ -1,0 +1,79 @@
+.warehouseDesign {
+  display: flex;
+  width: calc(100%);
+  height: calc(100%);
+  .mainContent {
+    // flex: auto;
+    position: relative;
+    height: 100%;
+    // width: auto;
+    background-color: #f7f7f7;
+    .shrink {
+      position: absolute;
+      top: calc(50% - 28px);
+      left: 0;
+      z-index: 10;
+      width: 18px;
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      background: #fcfcfc;
+      border-top-right-radius: 70px;
+      border-bottom-right-radius: 70px;
+      cursor: pointer;
+    }
+  }
+  // .rightHandle{
+  //   width: 48px;
+  //   height: 100%;
+  //   background: #fcfcfc;
+  // }
+}
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+  .title {
+    color: #3c4443;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: FZLTZHK--GBK1-0;
+    letter-spacing: 0;
+  }
+  .operation {
+    display: flex;
+    margin-top: 54px;
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 240px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    .left .selectProject,
+    .right .selectProject {
+      width: 100px;
+      height: 30px;
+      margin-top: 21px;
+      color: #fff;
+      font-size: 14px;
+      font-family: PingFangSC-Semibold;
+      line-height: 30px;
+      text-align: center;
+      background: #38ccb5;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    .right {
+      margin-left: 80px;
+    }
+  }
+}

@@ -126,7 +126,6 @@ function createObj(){
     return new F()
 }
 // 继承原型上的属性和方法
-// People.prototype = Object.create(Person.prototype)
 People.prototype = createObj(Person.prototype)
 //重写People.prototype的constructor属性,使其执行自己的构造函数People(修复实例，不然还是会指向Person)
 People.prototype.constructor = People

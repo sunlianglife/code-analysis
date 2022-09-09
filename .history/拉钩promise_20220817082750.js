@@ -98,7 +98,6 @@ class MyPromise {
         })
       }
     })
-    return promise2
   }
 
   catch (failCallBack) {

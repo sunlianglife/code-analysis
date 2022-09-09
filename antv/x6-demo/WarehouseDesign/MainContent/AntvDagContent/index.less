@@ -1,0 +1,93 @@
+.AntvDagContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.nodeClass {
+  position: relative;
+  // width: 180px;
+  height: 40px;
+  color: #3c4443;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  border-radius: 7px;
+  &.selected,
+  &:hover {
+    border: 1px solid #38ccb5;
+    box-shadow: 0 0 2px 2px #b6f8ee;
+  }
+  .nodeTitle {
+    display: inline-block;
+    width: 190px;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .switch {
+    position: absolute;
+    top: -2px;
+    right: 8px;
+  }
+}
+
+.disableClass {
+  background: #dcdcdc !important;
+}
+
+:global {
+  .x6-dropdown {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .x6-menu-item-text {
+    padding-right: 0;
+  }
+  .x6-menu-item-button {
+    padding: 0 16px;
+  }
+  .x6-graph-scroller.x6-graph-scroller-paged .x6-graph {
+    box-shadow: none;
+  }
+}
+
+.borderClass {
+  border: 1px solid #38ccb5;
+  box-shadow: 0 1px 6px 0;
+}
+
+.nodeInfo {
+  width: 250px;
+  padding: 10px;
+  .title {
+    padding: 6px 10px;
+    color: #38ccb5;
+    font-size: 12px;
+    letter-spacing: 0;
+    background: #fff;
+    border-radius: 12px;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    line-height: 24px;
+    .key {
+      color: #fff;
+    }
+    .value {
+      margin-right: 18px;
+      color: #cdcdcd;
+    }
+    .icon {
+      margin-right: 18px;
+      color: #38ccb5;
+      font-size: 18px;
+    }
+  }
+}

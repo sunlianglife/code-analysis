@@ -1,0 +1,64 @@
+.toTop {
+  position: absolute;
+  top: 12px;
+  left: 5%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 10px;
+  .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 48px;
+    .contentIcon {
+      width: 100px;
+      margin-left: 24px;
+      cursor: pointer;
+    }
+    .title {
+      margin-left: 3px;
+      color: #3c4443;
+      font-weight: 400;
+      font-size: 13px;
+      font-family: PingFangSC-Regular;
+      letter-spacing: 0.65px;
+      vertical-align: middle;
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    line-height: 48px;
+    .icon {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.rightHandle {
+  position: absolute;
+  top: 0;
+  right: 17px;
+  z-index: 11;
+  width: 48px;
+  height: calc(100% - 17px);
+  background: #fff;
+  .rightBut {
+    padding: 16px;
+    color: #3c4443;
+    font-size: 13px;
+    line-height: 16px;
+    border-bottom: 1px solid #f3f3f3;
+    cursor: pointer;
+    &:hover {
+      border-radius: 5px;
+      box-shadow: 0 0 10px -2px #bfcbca;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.editDispatch {
+  :global {
+    .ant-form-item-label {
+      width: 90px;
+      margin-right: 15px;
+    }
+    .ant-input-affix-wrapper:focus {
+      box-shadow: none !important;
+    }
+    .ant-form-item-has-error :not(.ant-input-affix-wrapper-disabled).ant-input-affix-wrapper:focus,
+    .ant-form-item-has-error
+      :not(.ant-input-affix-wrapper-disabled).ant-input-affix-wrapper-focused {
+      box-shadow: none !important;
+    }
+    .ant-input-affix-wrapper {
+      border: none;
+    }
+  }
+}
+
+.cronWrap {
+  :global {
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+      .ant-select-selector,
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+      box-shadow: none;
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background: #f7f7f7;
+      border: none;
+      border-radius: 2px;
+    }
+  }
+}
+
+.rowItem {
+  // margin-left: -35px;
+  .rowOpts {
+    .btnAddItem {
+      width: 120px;
+      height: 32px;
+      color: #38ccb5;
+      background: #f9f9f9;
+      border: none;
+      border-radius: 2px;
+      .txtWarning {
+        position: relative;
+        margin-left: 4px;
+        // top: 1px
+      }
+    }
+  }
+}

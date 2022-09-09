@@ -1,0 +1,120 @@
+.renderTitle {
+  position: relative;
+  display: flex;
+  height: 31px;
+  padding: 2px 0 0 4px;
+  line-height: 31px;
+  span {
+    display: block;
+  }
+  svg {
+    vertical-align: middle;
+  }
+  .title {
+    margin-left: 8px;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+  .signTrue,
+  .signFalse {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+  .signFalse {
+    background-color: #1496db;
+  }
+  .signTrue {
+    background-color: #77e6d5;
+  }
+}
+
+.SqlJobList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  // height: auto;
+  // height: auto;
+  height: calc(100% - 21px);
+  border-right: 1px solid #f7f7f7;
+  :global {
+    .ant-tree .ant-tree-treenode {
+      width: 100%;
+      padding: 5px 20px;
+    }
+    .ant-tree .ant-tree-node-content-wrapper {
+      // width: 174px;
+      margin-left: 8px;
+      padding: 0 20px 0 0;
+      border-radius: 4px;
+    }
+    .ant-tree-switcher .ant-tree-switcher-icon {
+      color: #b0b0b0;
+      font-size: 13px;
+    }
+    .ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+      background-color: #38ccb5;
+      // background-color: #97eadd;
+      .title {
+        color: #fff !important;
+      }
+    }
+    .ant-tree-indent-unit {
+      width: 10px;
+    }
+    .ant-tree {
+      background-color: #f7f7f7;
+    }
+    .ant-spin-nested-loading {
+      height: 100%;
+    }
+    .ant-spin-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+  }
+  .SqlJobSearch {
+    margin: 21px 16px 0 16px;
+    :global {
+      .ant-input-affix-wrapper {
+        border: none;
+      }
+      .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child {
+        left: 8px;
+      }
+      .ant-input-search-button {
+        background: aliceblue;
+        background: #38ccb5;
+        // height: 32px;
+        border: none;
+        border-radius: 4px;
+      }
+      .ant-input-search
+        > .ant-input-group
+        > .ant-input-group-addon:last-child
+        .ant-input-search-button {
+        border-radius: 4px;
+      }
+      .ant-input-affix-wrapper:focus {
+        box-shadow: none;
+      }
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        background: white !important;
+      }
+      .ant-input-group > .ant-input:last-child, .ant-input-group-addon:last-child{
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.DJobList {
+  width: 100%;
+  height: auto;
+  height: calc(100% - 54px);
+  overflow: auto;
+  border-right: 1px solid #f7f7f7;
+  :global {
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+      color: #b0b0b0;
+      font-size: 13px;
+      vertical-align: 4px;
+    }
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding: 0 22px;
+    }
+    .ant-collapse-ghost > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+      padding: 13px 16px;
+    }
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header > .ant-collapse-header-text {
+      width: 100%;
+    }
+  }
+  .header {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .headerTitle {
+      display: inline-block;
+      width: 70px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+    }
+  }
+  .headerBg {
+    background-color: #38ccb5;
+    border-radius: 4px;
+  }
+  .renderChildren {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 52px);
+    height: 100%;
+    margin-left: 52px;
+    .children {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 35px;
+      &::before {
+        position: absolute;
+        top: -15px;
+        left: -13px;
+        width: 10px;
+        width: 3;
+        height: 35px;
+        border-bottom: 1.5px solid #b0b0b0;
+        border-left: 1.5px solid #b0b0b0;
+        content: '';
+      }
+    }
+  }
+}

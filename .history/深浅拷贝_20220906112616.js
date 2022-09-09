@@ -53,19 +53,3 @@ const deepClone = (target, hash = new WeakMap()) => {
     return cloneObj
     
 }
-
-function deepC(target,hash = new WeakMap()){
-    if(typeof target !== 'object' || target === null) return target
-    const obj = Array.isArray(target) ? [] : {}
-
-    if(target.constructor === Date) return new Date(target)
-    if(target.constructor === RegExp) return new RegExp(target)
-
-    if(hash.has(target)) return hash.get(target)
-    hash.set(target, obj)
-
-    Reflect.ownKeys().forEach(item=>{
-        obj[item] = deepC(target[item], hash)
-    })
-    return obj
-}
